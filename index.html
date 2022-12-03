@@ -6,33 +6,65 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="stylebuy.css">
+    <script src="quickorder.js"></script>
+    
 </head>
 
 <body>
-    <div class="list_cart"></div>
-    <div class="header">
-        <div class="box_header">
-            <img class="img_header" src="image/banner/logo_header.avif" alt="">
-            <div class="box_search">
-                <input type="text" name="" id="search_item" placeholder="What are you looking for ? ">
-                <button class="button_search"><img src="image/icon/search_icon.png" alt="" width="70%"></button>
-            </div>
-        </div>
-        <div class="bar_item">
-            <div class="list_img">
-                <a class="img_link" href=""><img src="image/icon/icon_mail.png" alt=""></a>
-                <a class="img_link" href=""><img src="image/icon/icon_facebook.png" alt=""></a>
-                <a class="img_link" href=""><img src="image/icon/icon_instagram.png" alt=""></a></a>
-                <a class="img_link" href=""><img src="image/icon/icon_pinterest.png" alt=""></a></a>
-            </div>
-            <div class="info_item">
-                <div><a href="Login.html" class="login"><img src="image/icon/icon_person.png" alt="" width="30px"
-                            style="margin-right: 10%;"><span>Login</span></a></div>
-                <div><a href=""><img src="image/icon/icon_cart.png" alt="" width="30px"></a></div>
+   <div id="quick_order_page">
+    <div class="quick_order_box">
+        <button onclick="cancel_page()" id="cancel_quick_order"><img src="image/icon/cancel_icon.png" alt=""></button>
+        <div class="quick_order_flex__box">
+            <div><img id="img_product" src="image/img pokemon/Shadowverse_img.webp" alt=""></div>
+            <div class="box_content" style="margin-top: 3%;">
+                <p class="title_product">Shadowverse Evolve Booster Pack 4Th Tensei Myth Box</p>
+                <p>by
+                    <a class="company" href="">Bushiroad</a>
+                </p>
+                <p>Availability: <span style="color: #3c9342;">5+ in stock</span></p>
+                <p style="font-size: 1.4rem;">1.493.000₫</p>
+                <div class="quantily_product">
+                    <select name="" id="" class="combobox" aria-label="Quantily"> 
+                        <option value="">1</option>
+                        <option value="">2</option>
+                        <option value="">3</option>
+                        <option value="">4</option>
+                        <option value="">5</option>
+                        <option value="">6</option>
+                        <option value="">7</option>
+                        <option value="">8</option>
+                        <option value="">9</option>
+                        <option value="">10+</option>
+                    </select>
+                    <a href="" class="pre_order">Add to Cart</a>
+                </div>
+                <div class="shop_pay">
+                    <a href="">Buy with Shop Pay</a>
+    
+                </div>
+                <div class="payment">
+                    <a href="" class="payment_option">More payment options</a>
+                </div>
+                <div>
+                    <a href="" class="wishlist"><img src="image/icon/heart-icon.png" alt="">ADD TO WISHLIST</a>
+                </div>
+                <div>
+                    <p class="detail">Details:</p>
+                    <ul>
+                        <li>Brand: Bandai</li>
+                        <li>Weight: 340g</li>
+                        <li>Content: <br>
+                            <span>10 Packs total. Each Pack includes 11 cards (1x holo basic energy card is included in each pack).</span>
+                                <br><span>The full set will contain 184 different cards + secret rares.</span>
+                        </li>
+                    </ul>
+                    * This product information is updating, please contact us if you want to have any information.
+                </div>
             </div>
         </div>
     </div>
-
+   </div>
     <div class="topnav">
         <a href="#">TRANG CHỦ</a>
         <a href="#">POKEMON</a>
@@ -57,7 +89,7 @@
     <div style="margin-left: 10%; margin-right: 7%;">
         <ul class="list_item" style="list-style-type: none;">
             <li class="item">
-                <div>
+                <a href="buy_product.html"  class="link_item">
                     <div class="border_box">
                         <img src="image/banner/card_1.avif" alt="" class="onepiece_img">
                     </div>
@@ -67,13 +99,13 @@
                         <a href="" class="link_item" style="font-size: 0.8rem;">Bandai</a>
                     </div>
                     <div class="order">
-                        <button>Quick Shop</button>
+                        <button onclick="quickorder_page()">Quick Shop</button>
                         <button>Add to Cart</button>
                     </div>
-                </div>
+                </a>
             </li>
             <li class="item">
-                <div>
+                <a href=""  class="link_item">
                     <div class="border_box">
                         <img src="image/banner/card_2.webp" alt="">
                     </div>
@@ -83,13 +115,13 @@
                         <a href="" class="link_item" style="font-size: 0.8rem;">Bushiroad</a>
                     </div>
                     <div class="order">
-                        <button>Quick Shop</button>
+                        <button onclick="quickorder_page()">Quick Shop</button>
                         <button>Add to Cart</button>
                     </div>
-                </div>
+                </a>
             </li>
             <li class="item">
-                <div>
+                <a href=""  class="link_item">
                     <div class="border_box">
                         <img src="image/banner/card_3.webp" alt="">
                     </div>
@@ -99,13 +131,13 @@
                         <a href="" class="link_item" style="font-size: 0.8rem;">Bushiroad</a>
                     </div>
                     <div class="order">
-                        <button>Quick Shop</button>
+                        <button onclick="quickorder_page()">Quick Shop</button>
                         <button>Add to Cart</button>
                     </div>
-                </div>
+                </a>
             </li>
             <li class="item">
-                <div>
+                <a href=""  class="link_item">
                     <div class="border_box">
                         <img src="image/banner/card_4.avif" alt="">
                     </div>
@@ -115,13 +147,13 @@
                         <a href="" class="link_item" style="font-size: 0.8rem;">Bandai</a>
                     </div>
                     <div class="order">
-                        <button>Quick Shop</button>
+                        <button onclick="quickorder_page()">Quick Shop</button>
                         <button>Add to Cart</button>
                     </div>
-                </div>
+                </a>
             </li>
             <li class="item">
-                <div>
+                <a href=""  class="link_item">
                     <div class="border_box">
                         <img src="image/banner/card_5.webp" alt="">
                     </div>
@@ -131,13 +163,13 @@
                         <a href="" class="link_item" style="font-size: 0.8rem;">Takara Tomy</a>
                     </div>
                     <div class="order">
-                        <button>Quick Shop</button>
+                        <button onclick="quickorder_page()">Quick Shop</button>
                         <button>Add to Cart</button>
                     </div>
-                </div>
+                </a>
             </li>
             <li class="item">
-                <div>
+                <a href=""  class="link_item">
                     <div class="border_box">
                         <img src="image/banner/card_7.webp" alt="">
                     </div>
@@ -147,13 +179,13 @@
                         <a href="" class="link_item" style="font-size: 0.8rem;">Takara Tomy</a>
                     </div>
                     <div class="order">
-                        <button>Quick Shop</button>
+                        <button onclick="quickorder_page()">Quick Shop</button>
                         <button>Add to Cart</button>
                     </div>
-                </div>
+                </a>
             </li>
             <li class="item">
-                <div>
+                <a href=""  class="link_item">
                     <div class="border_box">
                         <img src="image/banner/card_6.webp" alt="">
                     </div>
@@ -163,13 +195,13 @@
                         <a href="" class="link_item" style="font-size: 0.8rem;">Bandai</a>
                     </div>
                     <div class="order">
-                        <button>Quick Shop</button>
+                        <button onclick="quickorder_page()">Quick Shop</button>
                         <button>Add to Cart</button>
                     </div>
-                </div>
+                </a>
             </li>
             <li class="item">
-                <div>
+                <a href=""  class="link_item">
                     <div class="border_box">
                         <img src="image/banner/card_8.avif" alt="">
                     </div>
@@ -179,13 +211,13 @@
                         <a href="" class="link_item" style="font-size: 0.8rem;">Takara Tomy</a>
                     </div>
                     <div class="order">
-                        <button>Quick Shop</button>
+                        <button onclick="quickorder_page()">Quick Shop</button>
                         <button>Add to Cart</button>
                     </div>
-                </div>
+                </a>
             </li>
             <li class="item">
-                <div>
+                <a href=""  class="link_item">
                     <div class="border_box">
                         <img src="image/banner/card_9.avif" alt="">
                     </div>
@@ -196,13 +228,13 @@
                         <a href="" class="link_item" style="font-size: 0.8rem;">Konami Digital Entertainment</a>
                     </div>
                     <div class="order">
-                        <button>Quick Shop</button>
+                        <button onclick="quickorder_page()">Quick Shop</button>
                         <button>Add to Cart</button>
                     </div>
-                </div>
+                </a>
             </li>
             <li class="item">
-                <div>
+                <a href="" class="link_item">
                     <div class="border_box">
                         <img src="image/banner/card_10.avif" alt="">
                     </div>
@@ -212,10 +244,10 @@
                         <a href="" class="link_item" style="font-size: 0.8rem;">Mattel</a>
                     </div>
                     <div class="order">
-                        <button>Quick Shop</button>
+                        <button onclick="quickorder_page()">Quick Shop</button>
                         <button>Add to Cart</button>
                     </div>
-                </div>
+                </a>
             </li>
         </ul>
     </div>
@@ -230,7 +262,7 @@
                 <a href="" class="link_item">Pokemon Card Pikachu 001/SV-P Scarlet &amp; Violet PROMO MINT</a><br>
                 <a href="" class="link_item" style="font-size: 0.8rem;">Pokemon</a>
                 <div class="order">
-                    <button>Quick Shop</button>
+                    <button onclick="quickorder_page()">Quick Shop</button>
                     <button>Add to Cart</button>
                 </div>
             </div>
@@ -243,7 +275,7 @@
                 <a href="" class="link_item">Mattel Minecraft Unocard Game asdsadasd</a><br>
                 <a href="" class="link_item" style="font-size: 0.8rem;">Mattel</a>
                 <div class="order">
-                    <button>Quick Shop</button>
+                    <button onclick="quickorder_page()">Quick Shop</button>
                     <button>Add to Cart</button>
                 </div>
             </div>
@@ -255,7 +287,7 @@
                 <a href="" class="link_item">Mattel Minecraft Unocard Game</a><br>
                 <a href="" class="link_item" style="font-size: 0.8rem;">Mattel</a>
                 <div class="order">
-                    <button>Quick Shop</button>
+                    <button onclick="quickorder_page()">Quick Shop</button>
                     <button>Add to Cart</button>
                 </div>
             </div>
@@ -267,7 +299,7 @@
                 <a href="" class="link_item">Mattel Minecraft Unocard Game</a><br>
                 <a href="" class="link_item" style="font-size: 0.8rem;">Mattel</a>
                 <div class="order">
-                    <button>Quick Shop</button>
+                    <button onclick="quickorder_page()">Quick Shop</button>
                     <button>Add to Cart</button>
                 </div>
             </div>
@@ -279,7 +311,7 @@
                 <a href="" class="link_item">Mattel Minecraft Unocard Game</a><br>
                 <a href="" class="link_item" style="font-size: 0.8rem;">Mattel</a>
                 <div class="order">
-                    <button>Quick Shop</button>
+                    <button onclick="quickorder_page()">Quick Shop</button>
                     <button>Add to Cart</button>
                 </div>
             </div>
